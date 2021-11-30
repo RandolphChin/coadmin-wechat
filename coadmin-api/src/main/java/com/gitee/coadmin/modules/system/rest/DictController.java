@@ -49,7 +49,6 @@ public class DictController {
     private final DictService dictService;
     private static final String ENTITY_NAME = "dict";
 
-    @Log("导出字典数据")
     @ApiOperation("导出字典数据")
     @UnifiedAPI(enable = false)
     @GetMapping(value = "/download")
@@ -58,7 +57,6 @@ public class DictController {
         dictService.download(dictService.queryAll(criteria), response);
     }
 
-    @Log("查询字典")
     @ApiOperation("查询字典")
     @GetMapping(value = "all")
     @PreAuthorize("@el.check('dict:list')")
@@ -66,7 +64,6 @@ public class DictController {
         return dictService.queryAll(new DictQueryParam());
     }
 
-    @Log("查询字典")
     @ApiOperation("查询字典")
     @GetMapping
     @PreAuthorize("@el.check('dict:list')")
@@ -74,7 +71,6 @@ public class DictController {
         return dictService.queryAll(query,pageable);
     }
 
-    @Log("新增字典")
     @ApiOperation("新增字典")
     @PostMapping
     @PreAuthorize("@el.check('dict:add')")
@@ -85,7 +81,6 @@ public class DictController {
         return dictService.save(resources)?1:0;
     }
 
-    @Log("修改字典")
     @ApiOperation("修改字典")
     @PutMapping
     @PreAuthorize("@el.check('dict:edit')")
@@ -93,7 +88,6 @@ public class DictController {
         return dictService.updateById(resources)?1:0;
     }
 
-    @Log("删除字典")
     @ApiOperation("删除字典")
     @DeleteMapping
     @PreAuthorize("@el.check('dict:del')")

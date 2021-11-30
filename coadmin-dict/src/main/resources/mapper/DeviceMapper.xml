@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gitee.coadmin.modules.equip.service.mapper.DeviceMapper">
+
+  <!-- 通用查询结果列 -->
+  <!--
+  <sql id="Base_Column_List">
+      a.id, a.device_name, a.device_id, a.status, a.create_time, a.type, a.latest_online_time, a.openid
+  </sql>
+  -->
+</mapper>
