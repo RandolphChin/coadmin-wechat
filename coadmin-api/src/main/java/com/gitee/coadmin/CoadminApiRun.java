@@ -38,7 +38,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(hidden = true)
 @SpringBootApplication
 @EnableTransactionManagement
-@ComponentScan(basePackages = {"com.gitee.coadmin", "com.gitee.app"})
+// @ComponentScan(basePackages = {"com.gitee.coadmin", "com.gitee.app"})
 public class CoadminApiRun {
 
     public static void main(String[] args) {

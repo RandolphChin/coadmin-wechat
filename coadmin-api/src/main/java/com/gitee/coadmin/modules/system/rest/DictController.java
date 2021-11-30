@@ -17,15 +17,15 @@ package com.gitee.coadmin.modules.system.rest;
 
 import com.gitee.coadmin.annotation.UnifiedAPI;
 import com.gitee.coadmin.base.PageInfo;
+import com.gitee.coadmin.modules.system.domain.Dict;
+import com.gitee.coadmin.modules.system.service.DictService;
 import com.gitee.coadmin.modules.system.service.dto.DictDto;
+import com.gitee.coadmin.modules.system.service.dto.DictQueryParam;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import com.gitee.coadmin.modules.logging.annotation.Log;
 import com.gitee.coadmin.exception.BadRequestException;
-import com.gitee.coadmin.modules.system.domain.Dict;
-import com.gitee.coadmin.modules.system.service.DictService;
-import com.gitee.coadmin.modules.system.service.dto.DictQueryParam;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;

@@ -15,6 +15,7 @@
         <module>coadmin-tools</module>
         <module>coadmin-generator</module>
         <module>coadmin-api</module>
+        <module>coadmin-dict</module>
     </modules>
 
     <name>CoAdmin 后台管理</name>
