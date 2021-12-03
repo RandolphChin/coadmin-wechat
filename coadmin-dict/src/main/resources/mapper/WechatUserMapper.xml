@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gitee.coadmin.modules.wechat.service.mapper.WechatUserMapper">
+
+  <!-- 通用查询结果列 -->
+  <!--
+  <sql id="Base_Column_List">
+      a.id, a.openid, a.password, a.gender, a.create_time, a.nickname, a.avatar, a.last_login_time, a.last_login_ip
+  </sql>
+  -->
+</mapper>

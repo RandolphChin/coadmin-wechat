@@ -16,6 +16,7 @@
         <module>coadmin-generator</module>
         <module>coadmin-api</module>
         <module>coadmin-dict</module>
+        <module>coadmin-wechat</module>
     </modules>
 
     <name>CoAdmin 后台管理</name>
