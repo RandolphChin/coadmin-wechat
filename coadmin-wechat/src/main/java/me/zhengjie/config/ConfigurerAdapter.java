@@ -73,7 +73,7 @@ public class ConfigurerAdapter implements WebMvcConfigurer {
         registry.addResourceHandler("/**").addResourceLocations("classpath:/META-INF/resources/").setCachePeriod(0);
     }
 
-    @Override
+   /* @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         // 使用 fastjson 序列化，会导致 @JsonIgnore 失效，可以使用 @JSONField(serialize = false) 替换
         FastJsonHttpMessageConverter converter = new FastJsonHttpMessageConverter();
@@ -86,5 +86,5 @@ public class ConfigurerAdapter implements WebMvcConfigurer {
         converter.setSupportedMediaTypes(supportMediaTypeList);
         converter.setDefaultCharset(StandardCharsets.UTF_8);
         converters.add(converter);
-    }
+    }*/
 }

@@ -9,8 +9,11 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Set;
 
 @UnifiedAPI
 @RestController
@@ -30,5 +33,11 @@ public class DeviceWechatController {
     @ApiOperation("修改设备")
     public Integer update(@Validated @RequestBody DeviceDTO res){
         return deviceService.updateById(res);
+    }
+
+    @DeleteMapping
+    @ApiOperation("删除设备")
+    public Integer delete(@RequestBody Set<Long> ids) {
+        return deviceService.removeByIds(ids);
     }
 }
